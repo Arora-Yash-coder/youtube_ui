@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:youtube_ui/screens/nav_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,9 +20,7 @@ class MyApp extends StatelessWidget {
           bottomNavigationBarTheme: const BottomNavigationBarThemeData(
             selectedItemColor: Colors.white,
           )),
-      home: Scaffold(
-        appBar: AppBar(),
-      ),
+      home: const NAvScreen(),
     );
   }
 }

@@ -2,7 +2,7 @@ const User currentUser = User(
   username: 'Flutter',
   profileImageUrl:
       'https://yt3.ggpht.com/ytc/AKedOLQszIStjOIdSZYf4zDliwpynC69DDn0ZIJFwuP00w=-c-k-c0x00ffffff-no-rj',
-  subscribers: '100K',
+  subscribers: '500K',
 );
 final List<Video> videos = [
   Video(
