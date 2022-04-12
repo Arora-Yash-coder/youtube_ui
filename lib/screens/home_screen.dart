@@ -10,13 +10,16 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(slivers: [
         const CustomAppBar(),
-        SliverList(
-          delegate: SliverChildBuilderDelegate(
-            (context, index) {
-              final video = videos[index];
-              return VideoCard(video: video);
-            },
-            childCount: videos.length,
+        SliverPadding(
+          padding: const EdgeInsets.only(bottom: 60.0),
+          sliver: SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (context, index) {
+                final video = videos[index];
+                return VideoCard(video: video);
+              },
+              childCount: videos.length,
+            ),
           ),
         ),
       ]),
