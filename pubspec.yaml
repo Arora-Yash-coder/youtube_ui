@@ -37,7 +37,7 @@ dependencies:
   rename: ^2.0.1
   timeago: ^3.2.2
   miniplayer: ^1.0.1
-  riverpod: ^1.0.3
+  flutter_riverpod: ^0.13.1+1
 
 dev_dependencies:
   flutter_test:
