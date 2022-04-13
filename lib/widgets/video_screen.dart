@@ -25,11 +25,19 @@ class VideoScreen extends StatelessWidget {
                       children: [
                         Stack(
                           children: [
-                            Image.network(
-                              selectedVideo!.thumbnailUrl,
-                              height: 220,
-                              width: double.infinity,
-                              fit: BoxFit.cover,
+                            GestureDetector(
+                              onVerticalDragUpdate: (details) {
+                                context
+                                    .read(miniPlayerControllerProvider)
+                                    .state
+                                    .animateToHeight(state: PanelState.MIN);
+                              },
+                              child: Image.network(
+                                selectedVideo!.thumbnailUrl,
+                                height: 220,
+                                width: double.infinity,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                             IconButton(
                               iconSize: 30.0,
