@@ -17,10 +17,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Youtube UI Demo',
       theme: ThemeData(
-          brightness: Brightness.dark,
-          bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-            selectedItemColor: Colors.white,
-          )),
+        brightness: Brightness.dark,
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          selectedItemColor: Colors.white,
+        ),
+      ),
       home: const NavScreen(),
     );
   }
